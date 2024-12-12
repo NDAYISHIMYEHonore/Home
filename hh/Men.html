@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-COMERCE</title>
+    <style>
+        *
+        {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        body
+        {
+            background-color: #f4f4f9;
+            color: #fff;
+            line-height: 2rem;
+            
+        }
+        header
+        {
+            background-color: #0144c2;
+            position: fixed;
+            width: 100%;
+            align-items: center;
+            top: 0;
+            display: flex;
+            justify-content: space-between;
+            padding: 2rem 3rem;
+        }
+        nav
+        {
+            display: flex;
+            gap: 40px;
+        }
+        nav a
+        {
+            text-decoration: none;
+            color: #fff;
+            border-radius: 5px;
+        }
+        nav a:hover
+        {
+            background-color: #ff6347; 
+            transition: all ease-in-out 1s;
+            padding: 10px;
+        }
+        .nav-toggle{
+            display: none;
+            background-color: #8c66eb;
+            color: white;
+            border: none;
+            font-size: 1.5rem;
+            padding: 0.5rem;
+            cursor: pointer;
+            margin-left: auto;
+        }
+        .marinete
+        {
+            margin-top: 80px;
+            background: linear-gradient(to right,#22d348,#d68e07);
+            border: 4rem 2rem;
+            color: #f4f4f9;
+            padding: 50px;
+            text-align: center;
+            margin-top: auto;
+            
+        }
+        .marinete h2{
+            font-size: 3rem;
+        }
+        
+        .products
+        {
+            margin-top: 80px;
+            border: 4rem 2rem;
+            color: #0e0eaa;   
+        }
+        .products h2
+        {
+         font-size: 2rem;
+         color: #333;
+         margin-bottom: 1.5rem;
+        }
+        .product-grid
+        {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 1.5rem;
+            color: #95ee6c;
+
+        }
+        .product-card
+        {
+            background-color: #4bda12;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+            height: 450px;
+        }
+        .product-card:hover
+        {
+            transform: translateY(-10px);
+            box-shadow: 0 12px 24px rgb(0, 0, 0, 0.2);
+          
+        }
+        .product-card img input
+        {
+            
+            height: auto;
+            object-fit: cover;
+            border-radius: calc(background-colorvar(blue));
+          
+            
+        }
+        .product-card-content
+        {
+            padding: 1rem;
+            text-align: center;
+        }
+        .product-card h3 
+        {
+            font-size: 1.4rem;
+            color: #333;
+            margin-bottom: 0.5rem;
+        }
+        h3{
+            font-size: 2.5rem;
+            color: rgb(5, 218, 5);
+            text-align: center;
+            margin-top: auto;
+        }
+        .product-card p
+        {
+            font-size: 1.1rem;
+            color: #666;
+        }
+        .product-card .price 
+        {
+            font-size: 1.3rem;
+            color: #ff4500;
+            margin-top: 0.5rem ;
+        }
+        .product-card button
+        {
+            background-color: #ff4500;
+            color: #fff;
+            border: none;
+            padding: 10px;
+            margin-top:0 ;
+        
+
+        }
+        .footer
+        {
+            background-color: #e0960b;
+            padding: 5px;
+            width: 50%;
+            color: black;
+            border-radius: 20px;
+            text-align: center;
+        }
+       
+    </style>
+</head>
+<body>  </header> 
+  
+   <section class="marinete">
+    <h2>Men Store</h2><br>
+    <p>Shop from variety of items at the best prices. Quality product,fast delivery
+        ,and easy returns.Enkoy the best shopping</p>
+</section>
+<section class="products">
+    <h3>Our product</h3><br>
+    <div class="product-grid">
+        <div class="product-card">
+            <img src="men1 - Copy (2).jpeg" alt="shoes">
+            <div class="product-card-content">
+                <h4>Running Shoes</h4>
+                <p class="price">$30.99</p>
+                <button>Add to Cart</button>
+            </div>
+        </div>
+        <div class="product-card">
+            <img src="men2 - Copy (3).jpeg" alt="photes">
+            <div class="product-card-content">
+                <h4>Running Clothes</h4>
+                <p class="price">$50.99</p>
+                <button>Add to Cart</button>
+            </div>
+        </div>
+        <div class="product-card">
+            <img src="men3 - Copy - Copy - Copy.jpeg" alt="shoes" >
+            <div class="product-card-content">
+                <h4>Running Clothes</h4>
+                <p class="price">$53.77</p>
+                <button>Add to Cart</button>
+            </div>
+        </div>
+        <div class="product-card">
+            <img src="men4 - Copy.jpeg" alt="shoes">
+            <div class="product-card-content">
+                <h4>Running Clothes</h4>
+                <p class="price">$59.89</p>
+                <button>Add to Cart</button>
+            </div>
+        </div>
+      <div class="product-card">
+            <img src="men5 - Copy - Copy.jpeg" alt="shoes">
+            <div class="product-card-content">
+                <h4>Running Clothes</h4>
+                <p class="price">$60.66</p>
+                <button>Add to Cart</button>
+            </div>
+        </div>
+        <div class="product-card">
+            <img src="men1 - Copy (2).jpeg" alt="shoes">
+            <div class="product-card-content">
+                <h4>Running Clothes</h4>
+                <p class="price">$63.33</p>
+                <button>Add to Cart</button>
+            </div>
+        </div>
+    </section>
+    <marquee behavior="move" direction="left">
+        <div class="footer">
+            &copy;NDAYISHIMYE.Honore 
+</div>
+    </marquee>
+        
+    </div>
+
+ 
+ 
+
+
+
+</body>
+</html>
